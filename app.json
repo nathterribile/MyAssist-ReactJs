@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "boilerplate-react-vite",
+    "slug": "boilerplate-react-vite",
+    "version": "1.0.0",
+    "sdkVersion": "51.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "a85c8506-fe5f-49a5-931d-6405e0bcb466"
+      }
+    },
+    "android": {
+      "package": "com.nathterribile.boilerplatereactvite"
+    },
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    }
+  }
+}
+

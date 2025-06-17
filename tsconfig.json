@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx", // ou "react" para projetos antigos
+    "types": ["react", "react-dom"]
+  }
+}
