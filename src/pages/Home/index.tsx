@@ -5,8 +5,12 @@ import computacao from '../../assets/images/Computação.jpg'
 import eletrodomesticos from '../../assets/images/Eletrodomesticos.jpg'
 import eletronico from '../../assets/images/eletronico.jpg'
 import { useNavigate } from 'react-router-dom'
+import type { NavbarCollapseProps } from 'react-bootstrap'
 
 export function Home () {
+  const MyNavCollapse = (props: NavbarCollapseProps) => (
+    <Navbar.Collapse {...props} />
+  )
   const [loginMShow, setLMShow] = useState(false)
   const [user, setUser] = useState('')
   const inputUserChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -55,7 +59,7 @@ export function Home () {
         <Container>
           <div className='navbar-brand icon-logo text-white'><i className='bi bi-motherboard' /> MyAssist</div>
           <Navbar.Toggle aria-controls='responsive-navbar-nav '/>
-          <Navbar.Collapse className='align-itens-end d-flex' id='responsive-navbar-nav' role='navigation'>
+          <MyNavCollapse className='align-itens-end d-flex' id='responsive-navbar-nav' role='navigation'/>
             <Nav className="ms-auto navbar-nav">
               <NavDropdown title='Serviços' id='collapsible-nav-dropdown'>
                 <NavDropdown.Item href=''><strong>Computadores</strong></NavDropdown.Item>
@@ -96,7 +100,6 @@ export function Home () {
                 </Toast>
               </Modal>
             </Nav>
-          </Navbar.Collapse>
         </Container>
       </Navbar>
       <body className='container px-3 mb-5'>
