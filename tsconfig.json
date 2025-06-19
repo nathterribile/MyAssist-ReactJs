@@ -5,7 +5,11 @@
     "lib": ["dom", "dom.iterable", "esnext", "es2015"],
     "esModuleInterop": true,
     "allowImportingTsExtensions": true,
-    "noEmit": true
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "esnext"
   },
   "include": ["src/**/*","svg.d.ts"],
 }
