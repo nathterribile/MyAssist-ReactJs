@@ -9,7 +9,7 @@ import type { NavbarCollapseProps } from 'react-bootstrap'
 
 export function Home () {
   const MyNavCollapse = (props: NavbarCollapseProps) => (
-    <Navbar.Collapse {...props} />
+    <Navbar.Collapse className='align-itens-end d-flex' id='responsive-navbar-nav' role='navigation' {...(props as any)} />
   )
   const [loginMShow, setLMShow] = useState(false)
   const [user, setUser] = useState('')
@@ -59,7 +59,7 @@ export function Home () {
         <Container>
           <div className='navbar-brand icon-logo text-white'><i className='bi bi-motherboard' /> MyAssist</div>
           <Navbar.Toggle aria-controls='responsive-navbar-nav '/>
-          <MyNavCollapse className='align-itens-end d-flex' id='responsive-navbar-nav' role='navigation'/>
+          <MyNavCollapse/>
             <Nav className="ms-auto navbar-nav">
               <NavDropdown title='Serviços' id='collapsible-nav-dropdown'>
                 <NavDropdown.Item href=''><strong>Computadores</strong></NavDropdown.Item>

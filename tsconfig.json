@@ -7,9 +7,10 @@
     "allowImportingTsExtensions": true,
     "noEmit": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "module": "esnext",
     "target": "esnext"
   },
+
   "include": ["src/**/*","svg.d.ts"],
 }
