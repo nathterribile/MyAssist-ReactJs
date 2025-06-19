@@ -1,0 +1,21 @@
+.icon-logo {
+  font-size: 30px;
+  color: rgb(4, 4, 66);
+}
+
+.foto img{
+  width: 60px;
+
+}
+
+textarea{
+  resize:none;
+  height:150px;
+}
+
+.container-fluid
+{
+  width:100px !important;
+}
+
+

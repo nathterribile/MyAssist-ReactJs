@@ -1,0 +1,42 @@
+import { FlatCompat } from '@eslint/eslintrc';
+import js from '@eslint/js';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const compat = new FlatCompat({ baseDirectory: __dirname });
+
+export default [
+  js.configs.recommended,
+  ...compat.config({
+    extends: [
+      'plugin:@typescript-eslint/recommended',
+      'plugin:react/recommended',
+      'standard'
+    ],
+    parser: '@typescript-eslint/parser',
+    plugins: ['@typescript-eslint', 'react'],
+    parserOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      project: './tsconfig.json',
+      ecmaFeatures: {
+        jsx: true
+      }
+    },
+    rules: {
+      'react/react-in-jsx-scope': 'off'
+    },
+    settings: {
+      react: {
+        version: 'detect'
+      }
+    }
+  }),
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    rules: {
+      'no-undef': 'off'
+    }
+  }
+];
