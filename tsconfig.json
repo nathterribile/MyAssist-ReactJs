@@ -9,7 +9,8 @@
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "bundler",
     "module": "esnext",
-    "target": "esnext"
+    "target": "esnext",
+    "skipLibCheck": true
   },
 
   "include": ["src/**/*","svg.d.ts"],
