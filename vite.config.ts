@@ -19,6 +19,10 @@ export default defineConfig(configEnv => ({
     alias: {
       '/@': '/src',
     },
-  'allowImportingTsExtensions': true,
   },
+  server: {
+  fs: {
+    allow: ['.'],
+  },
+},
 }))

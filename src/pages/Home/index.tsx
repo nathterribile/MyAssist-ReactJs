@@ -9,7 +9,7 @@ import type { NavbarCollapseProps } from 'react-bootstrap'
 
 export function Home () {
   const MyNavCollapse = (props: NavbarCollapseProps) => (
-    <Navbar.Collapse className='align-itens-end d-flex' id='responsive-navbar-nav' role='navigation' {...(props as any)} />
+    <Navbar.Collapse className='align-itens-end d-flex' id='responsive-navbar-nav' role='navigation' {...(props)} />
   )
   const [loginMShow, setLMShow] = useState(false)
   const [user, setUser] = useState('')
