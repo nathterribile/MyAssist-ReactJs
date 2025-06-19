@@ -11,6 +11,7 @@ export default defineConfig(configEnv => ({
     linterPlugin({
       include: ['./src/**/*.{ts,tsx,json,png,jpg,svg}'],
       linters: [new EsLinter({ configEnv })],
+      exclude: ['./src/**'],
     }),
     svgrPlugin(),
   ],
