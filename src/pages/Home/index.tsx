@@ -19,7 +19,7 @@ export default function Home () {
   const [toast400LShow, set400TLShow] = useState(false);
   const [toast500LShow, set500TLShow] = useState(false);
   const handleLogin = () => {
-    fetch('https://172.29.208.1:8443/usuario/login?usuario=' + user + '&senha=' + password, {
+    fetch('https://myassist-backend-cahyf9d8chcwcxd0.brazilsouth-01.azurewebsites.net/usuario/login?usuario=' + user + '&senha=' + password, {
       method: 'POST',
     })
       .then(
