@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx", // ou "react" para projetos antigos
-    "types": ["react", "react-dom"]
+    "jsx": "react-jsx",
+    "types": ["react", "react-dom"],    
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   }
 }
